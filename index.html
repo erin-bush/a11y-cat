@@ -4,13 +4,20 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>a11y</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/prism.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,600italic,700,700italic,800,800italic' rel='stylesheet'>
+		<link rel="stylesheet" href="css/presentation.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script src="js/jquery.js"></script>
+		<script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
+		<link rel="shortcut icon" href="https://abs.twimg.com/emoji/v2/72x72/1f680.png" type="image/x-icon">
+
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,26 +31,557 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+			      <h1>🤘 a11y and u 🤘</h1>
+				  <aside class="notes">
+					  <b>Numeronyms</b><br>
+					  Hi everyone! So the subject of my talk is accessibility and easy ways we can include the accessibility standards into our everyday but before I start I have a few questions:
+				  </aside>
+			    </section> 
+			    
+			    <section>
+			        <img class="frame-img" src="images/revenuesevices.png" alt="a screenshot BC revenue services website">
+					<aside class="notes">
+						Has anyone ever tried to visit a non-responsive site on your phone?
+					</aside>
+			    </section>
+			    
+			    <section>
+			        <img class="frame-img" src="images/not-available.png" alt="a screenshot BC revenue services website">
+					<aside class="notes">
+						Or seen a message like this?
+						(I’m guessing) everyone has had an experience where content is not available to them 
+					</aside>
+			    </section>
+
+			    <section>
+			      <h1>👍🏻 a11y == 👍🏻 er'body</h1>
+				  <aside class="notes">
+					  The point I'm trying to make is that by addressing accessibility for impairments, improves the experience for everyone. 
+				  </aside>
+			    </section>
+				
+				<section>
+					<iframe class="center-iframe" width="600" height="500" data-src="https://www.thinkific.com/signin/"></iframe>
+					<aside class="notes">
+  					  Take for example this Remember Me checkbox - by increasing the hit area of it we improve the ability for all people to use this feature
+  				  	</aside>
+				</section>
+				
+				<section>
+					<h3>🐳🐳🐳🐯🐳</h3>
+					<p>In the US, 1 in 5 adults have a disability<p>
+					<aside class="notes">
+						There are many types of impairments and they might not be what you’d expect  				  	
+					</aside>
+				</section>
+				
+				<section>
+					<img class="frame-img" src="images/help.jpg" alt="A woman who has fallen and can't get up">
+					<aside class="notes">
+						Has anyone ever broken their arm before?  				  	
+					</aside>
+				</section>
+				
+				<section>
+					<img class="frame-img" src="https://media.giphy.com/media/80mXWlPqTSU1y/giphy.gif" alt="A man squinting">
+					<aside class="notes">
+						Or ever tried to use their computer outside on a sunny day?  				  	
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Impairment Temporalities</h2>
+					<ul>
+						<li class="fragment">temporary</li>
+						<li class="fragment">permanent</li>
+						<li class="fragment">situational</li>
+					</ul>
+					
+					<aside class="notes">
+						what would breaking your arm be? <br>
+						Or being outside on a sunny day?
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Impairment Categories</h2>
+					<ul>
+						<li class="fragment">visual</li>
+						<li class="fragment">motor</li>
+						<li class="fragment">hearing</li>
+						<li class="fragment">cognitive</li>
+					</ul>
+					
+					<aside class="notes">
+						Imagine trying to do a "I am not a robot text thing when you are dyslexic"
+					</aside>
+				</section>
+				
+				<section>
+					<h2>ROBOTS 🤖</h2>
+					<aside class="notes">
+						Does anyone know any types of assistive technology? <br>
+						- brail device<br>
+						- or even crutch or magnifying glass<br>
+						- screen reader <br>
+						- screen magnifications: anyone had to increase the text size of their parent's phone?<br>
+						- switch controllers<br>
+						- motion/eye tracking <br>
+						- speech input software<br>
+					</aside>
+				</section>
+				
+				<section>
+					<img class="frame-img" src="images/braille.jpg" alt="A braille device for computer">
+					<aside class="notes">
+						So how do we make our platform more accessible?
+					</aside>
+				</section>
+				
+				<!-- <section>
+					GOOGLE AD - slide 14 of arleym.com/a11y
+					
+					<aside class="notes">
+						What was once assistive technology for the blind is now commonplace in our devices
+					</aside>
+				</section> -->
+				
+				<section>
+					<h2>Web Content Accessibility Guidelines</h2>
+					<ol>
+						<li class="fragment">Perceivable</li>
+						<li class="fragment">Operable</li>
+						<li class="fragment">Understandable</li>
+						<li class="fragment">Robust</li>
+					</ol>
+					<aside class="notes">
+						* will be referecing the webaim checklist frequently<br>
+						1. Perceivable - can’t be invisible to all senses<br>
+						2. Operable - users must be able to operate the platform<br>
+						3. Understandable - users must be able to understand the information and the operability<br>
+						4. Robust - content must be robust enough to be interpreted across a variety of user agents including assistive technologies<br><br>
+						
+						** focus on functionality in this l&l
+					</aside>
+				</section>
+				
+				<section>
+					<ol>
+						<li>Focus</li>
+						<li>Semantic HTML</li>
+						<li>Navigability</li>
+						<li>ARIA</li>
+						<li>Style 💃🏽</li>
+					</ol>
+				</section>
+				
+				<section>
+					<!-- jedi gif -->
+					<h1>focus</h1>
+					<input class="big-input" type="text" placeholder="type something">
+					<aside class="notes">
+						What is focus used for? And what is it?<br>
+						Determine where keyboard events go in the page eg: input
+					</aside>
+				</section>
+				
+				<section>
+					<img class="frame-img" src="images/tweet.png" alt="Twitter focus state">
+					<h1>good</h1>
+					<aside class="notes">
+						Good focus example - Twitter
+					</aside>
+				</section>
+				
+				<section>
+					<iframe class="center-iframe" width="600" height="500" data-src="http://diy.thinkific.com/manage"></iframe>
+					<aside class="notes">
+						Bad focus example <br>
+						So what makes for good focus?
+					</aside>
+				</section>
+				
+				<section>
+					<h3>focus contrast</h3>
+					<input class="big-input no-contrast" type="text" placeholder="type something"> <img class="inline-image" width="40" src="images/forbidden-mark.png">
+					<br><br>
+					<input class="big-input" type="text" placeholder="type something"><img class="inline-image" width="40" src="images/checked.png">
+
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h1>tab order == dom order</h1>
+					<p>expect it to be the same as visual order</p>
+					<aside class="notes">
+						when would the visual order be different than the dom order? - floats - results in tab jumping around
+					</aside>
+				</section>
+				
+				<section>
+					<div class="w-code-editor position--relative">
+			        <div class="code-editor shadow shadow-hover">
+			          <span class="control"></span>
+			          <span class="control"></span>
+			          <span class="control"></span>
+							<pre>
+							  <code data-trim>
+								  <div class="btn" tabindex="0">nav content #1</div>
+								  
+								  <div class="modal" tabindex="-1">modal content</div>
+								  
+								  <div class="cool" tabindex="3">danger you have done a bad</div>
+							  </code> 
+							</pre>
+						</div>
+					</div>
+					<!-- <div class="w-code-editor position--relative">
+						 
+				      </div> -->
+					  <aside class="notes">
+						  There are three types of tabindex values:<br>
+						  * tabindex=”0” element placed in the “natural” tab order (defined by the DOM order).<br>
+						  * a tabindex > 0 will place the element in a manual tab order — visited in order<br>
+						  * a tabindex value equal to -1 will cause the element to be programmatically focusable, but not in the tab order.<br><br>
+						  
+						  * make elements focusable with tab-index=0<br>
+						  * tab-index = -1 is for focus management<br>
+					  </aside>
+					  
+				</section>
+				
+				<section>
+					<img class="frame-img" src="images/modal-focus.png" alt="Thinkific modal focus">
+					<h3>Managing Focus</h3>
+					<aside class="notes">
+						In this scenario we aren't managing the focus - focus is maintained on the element behind
+					</aside>
+				</section>
+					
+				<section>
+					<div class="w-code-editor position--relative">
+			        <div class="code-editor shadow shadow-hover">
+			          <span class="control"></span>
+			          <span class="control"></span>
+			          <span class="control"></span>
+							<pre>
+							  <code >
+  // Use the focus() method to set focus
+  function showModal() {
+	...
+	var modal = document.getElementById('modal2');
+	modal.focus();
+	...
+  }
+							  </code> 
+							</pre>
+						</div>
+					</div>
+				  <aside class="notes">
+					  modal doesn’t get focused 
+				  </aside>
+				</section>
+				
+				<section>
+					<h3>offscreen content</h3>
+
+					<div class="w-code-editor position--relative">
+			        <div class="code-editor shadow shadow-hover">
+			          <span class="control"></span>
+			          <span class="control"></span>
+			          <span class="control"></span>
+					  <pre>
+						  <code data-trim>
+							// for debugging 
+							document.activeElement
+						
+						
+							/* for hidden elements */
+							.hide {
+								display: none;
+							}
+							
+							.show {
+								display: block;
+							}
+						</code>
+			          </pre>
+			        </div>
+			      </div>
+				  
+					<aside class="notes">
+  					  
+  				  	</aside>
+				</section>
+				
+				<section>
+					<h3>offscreen content</h3>
+
+					<iframe class="center-iframe" width="600" height="500" data-src="http://diy.thinkific.com/manage"></iframe>
+					<aside class="notes">
+  					  Remember this? if we add display:none; to the app-navigation class then it won't be part of the tab index
+  				  </aside>
+				</section>
+				
+				<section>
+					<h1>forms</h1>
+				</section>
+				
+				<section>
+					<p>clearly defined boundaries</p>
+					<img class="frame-img" src="images/form.png" alt="Twitter focus state">
+
+					<aside class="notes">
+						Today's forms lack:<br>
+						1. clearly defined boundaries: important for people with visual impairments (knowing the location and size of the click target)
+  				  	</aside>
+				</section>
+				
+				<section>
+					<h3>labels</h3>
+					<input class="big-input big-margin" type="text" placeholder="nombre">
+
+					<label class="input-label">
+						nombre:
+						<input class="big-input" type="text">
+					</label>
+
+					<aside class="notes">
+						Today's forms lack:<br>
+						2. labels - placeholders disappear - also make the area more clickable <br>
+						- click area becomes much larger for people
+  				  	</aside>
+				</section>
+				
+				<section>
+					<p>color only errors</p>
+					<img class="frame-img" src="images/color-error.png" alt="Error with only color">
+
+					<aside class="notes">
+						Today's forms lack:<br>
+						Color only errors - not enough info and hard for people who are color blind<br>
+						try this out with the chrome color blind plugin
+  				  	</aside>
+				</section>
+				
+				<section>
+					<h3>skip links</h3>
+					<img class="frame-img" src="images/skip.png" alt="skip link example from airbnb">
+					
+				</section>
+				
+				<section>
+					<h2>Semantic HTML</h2>
+					<aside class="notes">
+						- introduces meaning to elements <br>
+					    - assistive technology needs to create an alternative user interface to suit its users needs: i.e. expressing the semantics of an element (web aim 4.1.2) - name, role & value must be able to be programmatically get/set <br>
+					    - voice control + switch control <br>
+  				  	</aside>
+				</section>
+					
+				<section>
+					<p>role, name, state & value</p>
+					<aside class="notes">
+						Screen reader gives certain information:<br>
+						1. what type of element it is: role<br>
+						2. name of element<br>
+						3. value of the element<br>
+						4. any information about the elements state<br>
+						can expect to hear element’s: role name state + val<br>
+						
+						** when we use semantic HTML accessibility is handled automatically
+  				  	</aside>
+				</section>
+				
+				<section>
+					<div class="w-code-editor position--relative">
+			        <div class="code-editor shadow shadow-hover">
+			          <span class="control"></span>
+			          <span class="control"></span>
+			          <span class="control"></span>
+					  <pre>
+						<code data-trim>
+							<div class="btn">CLICK ME</div>
+							
+							<button>CLICK ME</button>
+						</code>
+			          </pre>
+			        </div>
+			      </div>
+				  
+				</section>
+				
+				<section>
+					<h3>label types</h3>
+					<ol>
+						<li class="fragment">visible</li>
+						<li class="fragment">text alternatives</li>
+					</ol> 
+					<aside class="notes">
+						1. visible: used by all users to determine meaning for elements<br>
+						2. text alternatives: used when there is no need for a visual label (eg. image) - not usually visible on the page<br>
+						- checklist has recommendations for how/when to create visible and non-visible labels<br>
+						
+						Easiest: form buttons have a descriptive value<br>
+							- buttons typically have text & that acts as the buttons text alternative<br>
+	  				  </aside>
+				</section>
+				
+				
+				<section>
+					<h3>text alternatives</h3>
+
+					<iframe class="center-iframe" width="600" height="500" data-src="http://diy.thinkific.com/collections"></iframe>
+					<aside class="notes">
+						Test this out with a screen reader <br>
+						need: alt=“” attribute <br>
+						- needs to be a description of the image: not what it does if its a link<br>
+  				  </aside>
+				</section>
+				
+				<section>
+					<div class="w-code-editor position--relative">
+					<div class="code-editor shadow shadow-hover">
+					  <span class="control"></span>
+					  <span class="control"></span>
+					  <span class="control"></span>
+					  <pre>
+						<code data-trim>
+							<img src="images/cat.png" alt="cat staring off in the distance menacingly">
+						</code>
+					  </pre>
+					</div>
+				  </div>
+				  
+				</section>
+				
+				<section>
+					<h3>Can't get no semantics</h3>
+					<p class="fragment">ARIA</p>
+					<aside class="notes">
+						express semantics that HTML can’t express on its own <br>
+						extra info for screen readers <br>
+					    ** no semantic markup for some common ui-elements like dropdowns (which are fairly common and standard) <br>
+						Accessible Rich Internet Applications
+  				  </aside>
+				</section>
+				
+				
+				<section data-background-image="images/aria-roles.png">
+					
+					<!-- <img class="frame-img" src="images/aria-roles.png" alt="list of aria roles for components"> -->
+					<aside class="notes">
+						ARIA Roles from the webAIM checklist<br>
+  				  	</aside>
+				</section>
+				
+				<section>
+					<h3>Responsive Design</h3>
+					<aside class="notes">
+						Any ideas for how responsive design can help accessibilty? <br>
+						- when you zoom in enough you see the mobile version of the site <br>
+						- which is super great b/c larger text size & fewer elements<br>
+						- should use a resizable grid :+1:
+  				  	</aside>
+				</section>
+				
+				<section data-background-image="images/bigthink.png">
+					<!-- <img class="frame-img" src="images/bigthink.png" alt="zoomed in version of www.thinkific.com"> -->
+					<aside class="notes">
+						when you zoom in enough you see the mobile version of the site <br>
+						- which is super great b/c larger text size & fewer elements<br>
+						* definitely use relative sizes 
+					</aside>
+				</section>
+				
+				<section>
+					<img class="frame-img" src="images/contrast.png" alt="minimum color contrast for font sizes">
+					<h3>colour contrast</h3>
+					<aside class="notes">
+						jonathan had posted this in the design channel<br>
+						minimum recommended color contrats for font sizes - otherwise people won't be able to see it <br>
+					</aside>
+				</section>
+				
+				<section>
+					<img class="frame-img" src="images/touch.png" alt="zoomed in version of www.thinkific.com">
+					<aside class="notes">
+						make sure touch areas are big enough <br>
+						- recommended minimum touch target size is 48dp (device pixels)  <br>
+						- and should have a 32 dp margin around it <br>
+					</aside>
+				</section>
+				
+				<section>
+					<h3>pa11y demo 🐶</h3>
+						<div class="w-code-editor position--relative">
+						<div class="code-editor shadow shadow-hover">
+						  <span class="control"></span>
+						  <span class="control"></span>
+						  <span class="control"></span>
+						  <pre>
+							<code data-trim>
+								npx pa11y www.thinkific.com
+							</code>
+						  </pre>
+						</div>
+					  </div>
+					<aside class="notes">
+						or: watch video and discuss how we can solve the problems<br>
+						npx pa11y www.thinkific.com
+					</aside>
+				</section>
+				
+				
+				<section>
+					<h3>you so extra 👑</h3>
+					<a href="http://webaim.org/standards/wcag/checklist">WebAIM Checklist</a><br>
+    				<a href="https://github.com/pa11y/pa11y#actions">pa11y</a><br>
+					<a href="https://github.com/showcases/web-accessibility">Accessibility Developer Tools</a><br>
+					<a href="https://github.com/GoogleChrome/lighthouse">Lighthouse - Google Chrome</a><br>
+					<a href="http://a11yproject.com/">The a11y project</a><br>
+
+					<aside class="notes">
+						Web Acessibility in Mind<br>
+						lighthouse: analyzes web apps, and collects insights on developer best practices<br>
+					</aside>
+				</section>
+				
+				<section class="giphy" data-background-image="https://media.giphy.com/media/3ohzgSHpvk6b8M7f9e/giphy.gif">
+					<p class="giphy">be the color contrast you wish to see in the world</p>
+				</section>
+				<!-- https://media.giphy.com/media/3ohzgSHpvk6b8M7f9e/giphy.gif -->
+				
+				<!-- document.getElementById("myAnchor").focus(); -->
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<!-- <script src="js/prism.js"></script> -->
+
 
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
+			$( document ).ready(function() {
+			    twemoji.parse(document.body);
+			});
 			Reveal.initialize({
+				transition: 'none',
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					// { src: 'js/prism.js', async: true, callback: function() { } }
+
 				]
 			});
+			
 		</script>
 	</body>
 </html>

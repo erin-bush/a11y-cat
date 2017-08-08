@@ -1,0 +1,806 @@
+
+<!DOCTYPE html>
+<!-- Presentation notes at notes.md -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>#a11y</title>
+  <link rel="stylesheet" href="css/prism.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,600italic,700,700italic,800,800italic' rel='stylesheet'>
+  <link rel="stylesheet" href="css/presentation.css">
+  <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
+</head>
+<body>
+  <form id="jumper" class="jumper">
+    <input id="jumper-friend" type="number">
+    <input type="submit" class="jumper-button">
+  </form>
+  <div class="w-slides">
+
+
+
+    <section id="slide-1" class="slide">
+      <h2 class="mega loner">🤘 a11y and u 🤘</h2>
+    </section> 
+    
+    <section id="slide-2" class="slide">
+        <img class="frame-img" src="images/revenuesevices.png" alt="a screenshot BC revenue services website">
+    </section>
+    
+    <section id="slide-3" class="slide">
+        <img class="frame-img" src="images/not-available.png" alt="a screenshot BC revenue services website">
+    </section>
+
+    <!-- <section id="slide-2" class="slide full-img" style="background-image:url(img/convenience.jpg);">
+      <div class="a11y">This slide has a background image of a convenience store featuring side by side swinging doors. One's annoyingly locked.</div>
+    </section> -->
+
+
+    <section id="slide-4" class="slide">
+      <h3>👍🏻 a11y == 👍🏻 er'body</h2>
+    </section>
+
+
+
+    <section id="slide-5" class="slide">
+      <div class="content-box">
+        <h3 class="mega">Numeronyms</h3>
+        <ul>
+          <li>i18n - internationalization
+          <li>W3C – World Wide Web Consortium
+          <li>Y2K – The Year 2000 problem
+          <li>24/7
+          <li>AJ - A0J
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section id="slide-6" class="slide">
+      <img src="img/sidewalk.jpg" alt="sidewalk with a telephone pole obtrusively blocking the way" class="frame-img">
+    </section>
+
+
+
+    <section id="slide-7" class="slide full-img"  style="background-image:url(img/modals.png);">
+      <div class="a11y">This slide has a background image of a modal window on Twitter.com. The draft tweet reads "Modals are weird".</div>
+    </section>
+
+
+
+    <section id="slide-8" class="slide">
+      <div class="content-box">
+        <h3>Today's Take-Aways</h3>
+        <ul>
+          <li>Know what you don't know</li>
+          <li>Who / What / Why / How</li>
+          <li>Workflow Tips</li>
+          <li>Resources</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section id="slide-9" class="slide">
+      <div style="width: 700px;margin-top: -141px;">
+        <div class="w-icon-5">
+          <svg class="svgicon" style="fill:#fff" viewBox="0 0 141.732 177.165"><g><g><path d="M70.501,29.282v0.03c0.101,0,0.198-0.013,0.298-0.015c0.1,0.002,0.197,0.015,0.298,0.015v-0.03    c6.042-0.312,10.844-5.295,10.844-11.406c0-6.114-4.802-11.088-10.844-11.399v-0.03c-0.101,0-0.198,0.013-0.298,0.015    c-0.1-0.002-0.197-0.015-0.298-0.015v0.03c-6.042,0.311-10.844,5.285-10.844,11.399C59.658,23.987,64.459,28.971,70.501,29.282z"/><path d="M99.061,75.031L84.217,34.487c-0.136-0.379-0.335-0.712-0.557-1.025c-0.006-0.009-0.013-0.017-0.019-0.025    c-0.087-0.12-0.165-0.247-0.262-0.358h-0.047c-0.475-0.534-1.061-0.916-1.726-1.085l0.018-0.101h-0.26h-0.527h-0.26H61.153h-0.26    h-0.527h-0.26l0.018,0.101c-0.665,0.169-1.251,0.551-1.726,1.085h-0.047c-0.096,0.111-0.175,0.238-0.262,0.358    c-0.006,0.008-0.012,0.016-0.018,0.025c-0.222,0.312-0.421,0.646-0.557,1.025L42.671,75.031c-0.835,2.321,0.368,4.88,2.688,5.717    c2.322,0.835,4.88-0.368,5.716-2.69l9.325-24.008l-1.7,25.891l-8.48,48.912c-0.667,2.998-0.036,5.843,3.875,6.354    c3.91,0.512,7.622-1.505,8.288-4.503l8.482-42.406l8.482,42.406c0.666,2.998,4.378,5.015,8.288,4.503    c3.911-0.511,4.542-3.355,3.875-6.354L83.03,79.94l-1.7-25.891l9.326,24.008c0.836,2.322,3.395,3.525,5.716,2.69    C98.693,79.911,99.896,77.353,99.061,75.031z"/></path></g></g></svg>
+        </div>
+        <div class="w-icon-5">
+          <svg class="svgicon" style="fill:#fff" viewBox="0 0 141.732 177.165"><g><g><path d="M70.501,29.282v0.03c0.101,0,0.198-0.013,0.298-0.015c0.1,0.002,0.197,0.015,0.298,0.015v-0.03    c6.042-0.312,10.844-5.295,10.844-11.406c0-6.114-4.802-11.088-10.844-11.399v-0.03c-0.101,0-0.198,0.013-0.298,0.015    c-0.1-0.002-0.197-0.015-0.298-0.015v0.03c-6.042,0.311-10.844,5.285-10.844,11.399C59.658,23.987,64.459,28.971,70.501,29.282z"/><path d="M99.061,75.031L84.217,34.487c-0.136-0.379-0.335-0.712-0.557-1.025c-0.006-0.009-0.013-0.017-0.019-0.025    c-0.087-0.12-0.165-0.247-0.262-0.358h-0.047c-0.475-0.534-1.061-0.916-1.726-1.085l0.018-0.101h-0.26h-0.527h-0.26H61.153h-0.26    h-0.527h-0.26l0.018,0.101c-0.665,0.169-1.251,0.551-1.726,1.085h-0.047c-0.096,0.111-0.175,0.238-0.262,0.358    c-0.006,0.008-0.012,0.016-0.018,0.025c-0.222,0.312-0.421,0.646-0.557,1.025L42.671,75.031c-0.835,2.321,0.368,4.88,2.688,5.717    c2.322,0.835,4.88-0.368,5.716-2.69l9.325-24.008l-1.7,25.891l-8.48,48.912c-0.667,2.998-0.036,5.843,3.875,6.354    c3.91,0.512,7.622-1.505,8.288-4.503l8.482-42.406l8.482,42.406c0.666,2.998,4.378,5.015,8.288,4.503    c3.911-0.511,4.542-3.355,3.875-6.354L83.03,79.94l-1.7-25.891l9.326,24.008c0.836,2.322,3.395,3.525,5.716,2.69    C98.693,79.911,99.896,77.353,99.061,75.031z"/></path></g></g></svg>
+        </div>
+        <div class="w-icon-5">
+          <svg class="svgicon" style="fill:#fff" viewBox="0 0 141.732 177.165"><g><g><path d="M70.501,29.282v0.03c0.101,0,0.198-0.013,0.298-0.015c0.1,0.002,0.197,0.015,0.298,0.015v-0.03    c6.042-0.312,10.844-5.295,10.844-11.406c0-6.114-4.802-11.088-10.844-11.399v-0.03c-0.101,0-0.198,0.013-0.298,0.015    c-0.1-0.002-0.197-0.015-0.298-0.015v0.03c-6.042,0.311-10.844,5.285-10.844,11.399C59.658,23.987,64.459,28.971,70.501,29.282z"/><path d="M99.061,75.031L84.217,34.487c-0.136-0.379-0.335-0.712-0.557-1.025c-0.006-0.009-0.013-0.017-0.019-0.025    c-0.087-0.12-0.165-0.247-0.262-0.358h-0.047c-0.475-0.534-1.061-0.916-1.726-1.085l0.018-0.101h-0.26h-0.527h-0.26H61.153h-0.26    h-0.527h-0.26l0.018,0.101c-0.665,0.169-1.251,0.551-1.726,1.085h-0.047c-0.096,0.111-0.175,0.238-0.262,0.358    c-0.006,0.008-0.012,0.016-0.018,0.025c-0.222,0.312-0.421,0.646-0.557,1.025L42.671,75.031c-0.835,2.321,0.368,4.88,2.688,5.717    c2.322,0.835,4.88-0.368,5.716-2.69l9.325-24.008l-1.7,25.891l-8.48,48.912c-0.667,2.998-0.036,5.843,3.875,6.354    c3.91,0.512,7.622-1.505,8.288-4.503l8.482-42.406l8.482,42.406c0.666,2.998,4.378,5.015,8.288,4.503    c3.911-0.511,4.542-3.355,3.875-6.354L83.03,79.94l-1.7-25.891l9.326,24.008c0.836,2.322,3.395,3.525,5.716,2.69    C98.693,79.911,99.896,77.353,99.061,75.031z"/></path></g></g></svg>
+        </div>
+        <div class="w-icon-5">
+          <svg class="svgicon" style="fill:transparent;stroke:#fff;" viewBox="0 0 141.732 177.165"><g><g><path d="M70.501,29.282v0.03c0.101,0,0.198-0.013,0.298-0.015c0.1,0.002,0.197,0.015,0.298,0.015v-0.03    c6.042-0.312,10.844-5.295,10.844-11.406c0-6.114-4.802-11.088-10.844-11.399v-0.03c-0.101,0-0.198,0.013-0.298,0.015    c-0.1-0.002-0.197-0.015-0.298-0.015v0.03c-6.042,0.311-10.844,5.285-10.844,11.399C59.658,23.987,64.459,28.971,70.501,29.282z"/><path d="M99.061,75.031L84.217,34.487c-0.136-0.379-0.335-0.712-0.557-1.025c-0.006-0.009-0.013-0.017-0.019-0.025    c-0.087-0.12-0.165-0.247-0.262-0.358h-0.047c-0.475-0.534-1.061-0.916-1.726-1.085l0.018-0.101h-0.26h-0.527h-0.26H61.153h-0.26    h-0.527h-0.26l0.018,0.101c-0.665,0.169-1.251,0.551-1.726,1.085h-0.047c-0.096,0.111-0.175,0.238-0.262,0.358    c-0.006,0.008-0.012,0.016-0.018,0.025c-0.222,0.312-0.421,0.646-0.557,1.025L42.671,75.031c-0.835,2.321,0.368,4.88,2.688,5.717    c2.322,0.835,4.88-0.368,5.716-2.69l9.325-24.008l-1.7,25.891l-8.48,48.912c-0.667,2.998-0.036,5.843,3.875,6.354    c3.91,0.512,7.622-1.505,8.288-4.503l8.482-42.406l8.482,42.406c0.666,2.998,4.378,5.015,8.288,4.503    c3.911-0.511,4.542-3.355,3.875-6.354L83.03,79.94l-1.7-25.891l9.326,24.008c0.836,2.322,3.395,3.525,5.716,2.69    C98.693,79.911,99.896,77.353,99.061,75.031z"/></path></g></g></svg>
+        </div>
+        <div class="w-icon-5">
+          <svg class="svgicon" style="fill:#fff" viewBox="0 0 141.732 177.165"><g><g><path d="M70.501,29.282v0.03c0.101,0,0.198-0.013,0.298-0.015c0.1,0.002,0.197,0.015,0.298,0.015v-0.03    c6.042-0.312,10.844-5.295,10.844-11.406c0-6.114-4.802-11.088-10.844-11.399v-0.03c-0.101,0-0.198,0.013-0.298,0.015    c-0.1-0.002-0.197-0.015-0.298-0.015v0.03c-6.042,0.311-10.844,5.285-10.844,11.399C59.658,23.987,64.459,28.971,70.501,29.282z"/><path d="M99.061,75.031L84.217,34.487c-0.136-0.379-0.335-0.712-0.557-1.025c-0.006-0.009-0.013-0.017-0.019-0.025    c-0.087-0.12-0.165-0.247-0.262-0.358h-0.047c-0.475-0.534-1.061-0.916-1.726-1.085l0.018-0.101h-0.26h-0.527h-0.26H61.153h-0.26    h-0.527h-0.26l0.018,0.101c-0.665,0.169-1.251,0.551-1.726,1.085h-0.047c-0.096,0.111-0.175,0.238-0.262,0.358    c-0.006,0.008-0.012,0.016-0.018,0.025c-0.222,0.312-0.421,0.646-0.557,1.025L42.671,75.031c-0.835,2.321,0.368,4.88,2.688,5.717    c2.322,0.835,4.88-0.368,5.716-2.69l9.325-24.008l-1.7,25.891l-8.48,48.912c-0.667,2.998-0.036,5.843,3.875,6.354    c3.91,0.512,7.622-1.505,8.288-4.503l8.482-42.406l8.482,42.406c0.666,2.998,4.378,5.015,8.288,4.503    c3.911-0.511,4.542-3.355,3.875-6.354L83.03,79.94l-1.7-25.891l9.326,24.008c0.836,2.322,3.395,3.525,5.716,2.69    C98.693,79.911,99.896,77.353,99.061,75.031z"/></path></g></g></svg>
+        </div>
+        <h2 class="loner mega">20%</h2>
+      </div>
+    </section>
+
+
+
+    <section id="slide-10" class="slide slide--img">
+      <img src="img/users.png" alt="a grid of user icons requiring various a11y considerations, via Vox">
+      <!-- http://product.voxmedia.com/2016/5/11/11612516/accessibility-matters-and-heres-what-were-doing-about-it -->
+    </section>
+
+
+
+    <section id="slide-11" class="slide">
+      <h2 class="loner mega">Cognitive</h2>
+    </section>
+
+
+
+    <section id="slide-12" class="slide">
+      <video src="vid/vimeo.mov" controls></video>
+    </section>
+
+
+
+    <section id="slide-13" class="slide">
+      <h2 class="loner mega"><em>ROBOTS</em></h2>
+    </section>
+
+
+
+    <section id="slide-14" class="slide">
+      <video src="vid/assistant.mp4" controls></video>
+    </section>
+
+
+
+    <section id="slide-15" class="slide">
+      <blockquote style="margin:0;padding:0;">
+        <p>Google is, for all intents, a blind user.
+        <br>A billionaire blind user with tens of millions of friends, all of whom hang on his every word."
+        <cite>~ Karsten M. Self</cite>
+      </blockquote>
+    </section>
+
+
+
+    <section id="slide-16" class="slide">
+      <h2 class="loner mega">Problems?</h2>
+    </section>
+
+
+
+    <section id="slide-17" class="slide">
+      <h2 class="loner mega">"Features"</h2>
+    </section>
+
+
+
+    <section id="slide-18" class="slide full-img" style="background-image:url(img/stallman.png);">
+      <div class="a11y">A screenshot of open source champion Richard Stallman's site. It appears to have no CSS, pretty vanilla HTML, and a great a11y score.</div>
+    </section>
+
+
+
+    <section id="slide-19" class="slide full-img" style="background-image:url(img/sears.png);">
+      <div class="a11y">A screenshot of Sears.com and its fairly bad a11y audit</div>
+    </section>
+
+
+
+    <section id="slide-20" class="slide">
+      <form class="wack">
+        <!-- I do love this, but it's an example of losing functionality for cool features that aren't for everyone
+          http://codepen.io/udyux/pen/KzJQea
+        -->
+        <ul class="select">
+          <li>
+            <input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value=""/>
+            <span class="select_label select_label-placeholder">Awesomeness Level</span>
+          </li>
+
+          <li class="select_items">
+            <input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener"/>
+            <label class="select_closeLabel" for="awesomeness-close"></label>
+
+            <ul class="select_options">
+              <li class="select_option">
+                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous"/>
+                <label class="select_label" for="awesomeness-ridiculous">ridiculous</label>
+              </li>
+
+              <li class="select_option">
+                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable"/>
+                <label class="select_label" for="awesomeness-reasonable">reasonable</label>
+              </li>
+
+              <li class="select_option">
+                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-lacking"/>
+                <label class="select_label" for="awesomeness-lacking">lacking</label>
+              </li>
+
+              <li class="select_option">
+                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-awesomeless"/>
+                <label class="select_label" for="awesomeness-awesomeless">awesomeless</label>
+              </li>
+            </ul>
+
+            <label class="select_expandLabel" for="awesomeness-opener"></label>
+          </li>
+        </ul>
+
+      </form>
+    </section>
+
+
+    <section id="slide-21" class="slide">
+      <div class="w-code-editor position--relative">
+        <div class="code-editor shadow shadow-hover">
+          <span class="control"></span>
+          <span class="control"></span>
+          <span class="control"></span>
+          <pre>
+            <code contentEditable="true" class="language-html">
+      &lt;ul class=&quot;select&quot;&gt;
+        &lt;li&gt;
+          &lt;input class=&quot;select_close&quot; type=&quot;radio&quot; name=&quot;awesomeness&quot; id=&quot;awesomeness-close&quot; value=&quot;&quot;/&gt;
+          &lt;span class=&quot;select_label select_label-placeholder&quot;&gt;Awesomeness Level&lt;/span&gt;
+        &lt;/li&gt;
+
+        &lt;li class=&quot;select_items&quot;&gt;
+          &lt;input class=&quot;select_expand&quot; type=&quot;radio&quot; name=&quot;awesomeness&quot; id=&quot;awesomeness-opener&quot;/&gt;
+          &lt;label class=&quot;select_closeLabel&quot; for=&quot;awesomeness-close&quot;&gt;&lt;/label&gt;
+
+          &lt;ul class=&quot;select_options&quot;&gt;
+            &lt;li class=&quot;select_option&quot;&gt;
+              &lt;input class=&quot;select_input&quot; type=&quot;radio&quot; name=&quot;awesomeness&quot; id=&quot;awesomeness-ridiculous&quot;/&gt;
+              &lt;label class=&quot;select_label&quot; for=&quot;awesomeness-ridiculous&quot;&gt;ridiculous&lt;/label&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;select_option&quot;&gt;
+              &lt;input class=&quot;select_input&quot; type=&quot;radio&quot; name=&quot;awesomeness&quot; id=&quot;awesomeness-reasonable&quot;/&gt;
+              &lt;label class=&quot;select_label&quot; for=&quot;awesomeness-reasonable&quot;&gt;reasonable&lt;/label&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;select_option&quot;&gt;
+              &lt;input class=&quot;select_input&quot; type=&quot;radio&quot; name=&quot;awesomeness&quot; id=&quot;awesomeness-lacking&quot;/&gt;
+              &lt;label class=&quot;select_label&quot; for=&quot;awesomeness-lacking&quot;&gt;lacking&lt;/label&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;select_option&quot;&gt;
+              &lt;input class=&quot;select_input&quot; type=&quot;radio&quot; name=&quot;awesomeness&quot; id=&quot;awesomeness-awesomeless&quot;/&gt;
+              &lt;label class=&quot;select_label&quot; for=&quot;awesomeness-awesomeless&quot;&gt;awesomeless&lt;/label&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+
+          &lt;label class=&quot;select_expandLabel&quot; for=&quot;awesomeness-opener&quot;&gt;&lt;/label&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="slide-22" class="slide">
+      <select name="awesomeness" style="transform: scale(4);font-size:3em;">
+        <option>ridiculous</option>
+        <option>reasonable</option>
+        <option>lacking</option>
+        <option>awesomeless</option>
+      </select>
+    </section>
+
+
+    <section id="slide-23" class="slide">
+      <div class="w-code-editor position--relative">
+        <div class="code-editor shadow shadow-hover">
+          <span class="control"></span>
+          <span class="control"></span>
+          <span class="control"></span>
+          <pre>
+            <code contentEditable="true" class="language-html">
+      &lt;select name=&quot;awesomeness&quot;&gt;
+        &lt;option&gt;ridiculous&lt;/option&gt;
+        &lt;option&gt;reasonable&lt;/option&gt;
+        &lt;option&gt;lacking&lt;/option&gt;
+        &lt;option&gt;awesomeless&lt;/option&gt;
+      &lt;/select&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="slide-24" class="slide slide--img">
+      <img src="img/select.png" alt="an Android device's select pop up" class="shadow" style="max-width:360px;max-height:640px;">
+    </section>
+
+
+
+    <section id="slide-25" class="slide">
+      <h2 class="loner mega ">Assumptions</h2>
+    </section>
+
+
+
+    <section id="slide-26" class="slide">
+      <img src="img/pdvorak.png" alt="the programmer's dvorak keyboard layout" class="frame-img shadow">
+    </section>
+
+
+
+    <section id="slide-27" class="slide">
+      <span class="emoji">😀</span>
+    </section>
+
+
+
+    <section id="slide-28" class="slide">
+      <h2 class="mega loner">Do I hafta?</h2>
+    </section>
+
+
+
+    <section id="slide-29" class="slide">
+      <blockquote style="margin:0;padding:0;">Netflix, Disney and Target have all faced lawsuits alleging their websites offer poor accessibility for the disabled.</blockquote>
+      <!-- http://www.theguardian.com/sustainable-business/2015/dec/31/digital-discrimination-netflix-disney-target-web-accessibility-doj -->
+    </section>
+
+
+
+    <section id="slide-30" class="slide">
+      <div class="content-box">
+        <h2 class="weight--light" style="margin-bottom: .25em">Key Players</h2>
+        <p><strong>AODA</strong>: Accessibility for Ontarians with Disabilities Act (http://www.aoda.ca/): This is a governing body. They don’t have a standards set themselves; they enforce WCAG 2.0.
+        <p><strong>WCAG</strong>: Web Content Accessibility Guidelines. This group was developed by the W3C, and they set the standard for making the web accessible. They essentially have a collection of guidelines at three levels of strictness. Level A (the lowest) is required by law, in 2021 Level AA will be.
+      </div>
+    </section>
+
+
+    <section id="slide-31" class="slide">
+      <div class="content-box">
+        <h3 class="beta weight--light" style="margin-bottom: .25em">AODA excerpt:</h3>
+        <p>There are fines for persons or organizations convicted of an offence under the AODA. The fines are:
+        <ul>
+          <li>up to $50,000 for each and every day or part day that an offence happens
+          <li>for a corporation, up to $100,000 for each and every day or part day that an offence happens.
+        </ul>
+        <p>...officers of a corporation are liable to a fine of up to $50,000 for each and every day or part day that the offence happens
+      </div>
+    </section>
+
+
+
+    <section id="slide-32" class="slide">
+      <h2 class="mega loner">SEO</h2>
+    </section>
+
+
+
+    <section id="slide-33" class="slide">
+      <h2 class="mega loner">Do the right thing</h2>
+    </section>
+
+
+
+    <section id="slide-34" class="slide">
+      <div class="emoji">😭</div>
+    </section>
+
+
+
+    <section id="slide-35" class="slide">
+      <h2 class="alpha loner">That's why it's called <em>'work'</em>.</h2>
+    </section>
+
+
+
+    <section id="slide-36" class="slide">
+      <div>
+        <h1>Put the user first.</h1>
+        <h1>Do your best!</h1>
+      </div>
+    </section>
+
+
+
+    <section id="slide-37" class="slide slide--code">
+      <h2 class="mega loner">CODE</h2>
+    </section>
+
+
+
+    <section id="slide-38" class="slide">
+      <div class="content-box">
+        <ul style="width:45%;float:left;">
+          <li>Semantic Headings</li>
+          <li>Clear name, role, value, state</li>
+          <li>Meta tags</li>
+          <li>Language of page</li>
+          <li>Describe Abbreviations</li>
+          <li>Appropriate reading level</li>
+          <li>Resizable text</li>
+          <li>Keyboard navigable</li>
+          <li>Consistent navigation</li>
+          <li>No flashing</li>
+        </ul>
+        <ul style="width:45%;float:right;">
+          <li>Clear errors</li>
+          <li>Contextual help</li>
+          <li>Color Contrast</li>
+          <li>Clear link purposes</li>
+          <li>Form Labels</li>
+          <li>Visible Focus</li>
+          <li>Alt tags</li>
+          <li>Captions or Transcripts</li>
+          <li>Sign language</li>
+          <li>Media control</li>
+          <li>Animation control</li>
+          <li>...and much much more</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section id="slide-39" class="slide">
+      <div class="content-box">
+        <h2 class="mega">Aria</h2>
+        <p>ARIA (Assistive Rich Internet Applications), is a spec from the W3C and created to improve accessibility of applications by providing extra information to screen readers via HTML attributes.
+        <p>ARIA attributes are predefined in the spec and are divided into two categories: <strong>roles, and states & properties</strong>.
+      </div>
+    </section>
+
+
+
+    <section id="slide-40" class="slide">
+      <div class="w-code-editor position--relative">
+        <div class="code-editor shadow shadow-hover">
+          <span class="control"></span>
+          <span class="control"></span>
+          <span class="control"></span>
+          <pre>
+            <code contentEditable="true" class="language-html">
+      &lt;div id=&quot;js-tabs&quot;&gt;
+        &lt;ul role=&quot;tablist&quot; class=&quot;nav--tabs&quot;&gt;
+          &lt;li id=&quot;tab-label--<span class="highlight">tab1</span>&quot;&gt;&lt;a href=&quot;#tab-<span class="highlight">tab1</span>&quot; role=&quot;tab&quot; aria-controls=&quot;tab-<span class="highlight">tab1</span>&quot;&gt;<span class="highlight">tab1</span>&lt;/a&gt;&lt;/li&gt;
+          &lt;li id=&quot;tab-label--tab2&quot;&gt;&lt;a href=&quot;#tab-tab2&quot; role=&quot;tab&quot; aria-controls=&quot;tab-tab2&quot;&gt;tab2&lt;/a&gt;&lt;/li&gt;
+          &lt;li id=&quot;tab-label--tab3&quot;&gt;&lt;a href=&quot;#tab-tab3&quot; role=&quot;tab&quot; aria-controls=&quot;tab-tab3&quot;&gt;tab3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;&lt;!-- tabs --&gt;
+
+      &lt;div id=&quot;tab-<span class="highlight">tab1</span>&quot; class=&quot;tab is-active&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-label--<span class="highlight">tab1</span>&quot;&gt;
+        <p>Tab1 Content!
+      &lt;/div&gt;&lt;!-- tab --&gt;
+
+      &lt;div id=&quot;tab-tab2&quot; class=&quot;tab&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-label--tab2&quot;&gt;
+        <p>Tab2 Content!
+      &lt;/div&gt;&lt;!-- tab --&gt;
+
+      &lt;div id=&quot;tab-tab3&quot; class=&quot;tab&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-label--tab3&quot;&gt;
+        <p>Tab3 Content!</p>
+      &lt;/div&gt;&lt;!-- tab --&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="slide-41" class="slide">
+      <div>
+        <h3>Without Aria</h3>
+        <video controls src="vid/tabpanelswithout.mp4"></video>
+        <h3><em>"Same-page-link Home"</em></h3>
+        <!-- https://medium.com/@LeonieWatson/danger-testing-accessibility-with-real-people-4515f72db648#.byfbflth1 -->
+      </div>
+    </section>
+
+
+    <section id="slide-42" class="slide">
+      <div>
+        <h2>With Aria</h2>
+        <video controls src="vid/tabpanelswith.mp4"></video>
+        <h3><em>"Home, tab selected, use Jaws key plus alt plus N to move the controlled element, 1 of 3."</em></h3>
+        <!-- https://medium.com/@LeonieWatson/danger-testing-accessibility-with-real-people-4515f72db648#.byfbflth1 -->
+      </div>
+    </section>
+
+
+    <section id="slide-43" class="slide">
+      <div>
+        <h2 class="mega">#a11y time!</h2>
+        <h4 class="alpha">3 Ways to tackle this</h4>
+      </div>
+    </section>
+
+
+    <section id="slide-44" class="slide">
+      <div class="content-box">
+        <h2 class="alpha">Best Practices</h2>
+        <ol>
+          <li>Standards compliant, semantic code</li>
+          <li>Simple, intuitive UI and UX</li>
+        </ol>
+      </div>
+    </section>
+
+
+
+    <section id="slide-45" class="slide full-img" style="background-image:url(img/stallman.png);">
+      <div style="background:rgba(61, 97, 153, 0.9);height: 240px;width: 100%;padding-top: 5.2em;">
+        <h2 class="mega loner " style="font-weight:bold;">The Easy Way</h2>
+      </div>
+      <div class="a11y">that same screenshot Richard Stallman's site, it could be called bit ugly.</div>
+    </section>
+
+
+
+    <section id="slide-46" class="slide">
+      <div class="content-box">
+        <h2 class="alpha ">The Hard Way</h2>
+        <h3 class="delta">Do your best and test as much as you can, as you develop.</h3>
+        <p>Checklists, Testing Tools, and a keen eye
+      </div>
+    </section>
+
+
+
+    <section id="slide-47" class="slide">
+      <div class="content-box">
+        <h2 class="alpha ">The Very Hard Way</h2>
+        <h2 class="delta">Know everything about everything</h2>
+        <p>Quick reference (<a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_overview">link</a>)
+      </div>
+    </section>
+
+
+
+    <section id="slide-48" class="slide">
+      <h2 class="mega loner">Testing</h2>
+    </section>
+
+
+
+    <section id="slide-49" class="slide">
+      <h3 class="alpha loner">A11y Project Checklist</h3>
+    </section>
+
+
+
+    <section id="slide-50" class="slide">
+      <h3>Test for different types of color blindness</h3>
+      <div>
+        <img src="img/colors.jpg" alt="" class="frame-img" style="margin:0 .5em">
+        <img src="img/colors.jpg" alt="" class="frame-img" style="margin:0 .5em">
+        <p><small><a href="https://www.flickr.com/photos/toodleson/4866215893/sizes/l">via flickr</a></small>
+      </div>
+    </section>
+
+
+
+    <section id="slide-51" class="slide">
+      <h3>Testing for Brightness & Contrast</h3>
+      <img src="img/sunny.jpg" alt="" class="frame-img shadow">
+      <div class="w-code-editor position--relative" style="max-width:724px;">
+        <div class="code-editor shadow shadow-hover">
+          <span class="control"></span>
+          <span class="control"></span>
+          <span class="control"></span>
+          <pre>
+            <code contentEditable="true" class="language-css">
+      /* Dim the site, but not the dev tools */
+      /* Maybe toggle .is-dim with a bit of JS to trigger this */
+      body.is-dim { opacity: 0.1; }
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="slide-52" class="slide">
+      <h3>Wave Web Accessibility Evaluation Tool</h3>
+      <img src="img/wave.png" alt="" class="frame-img">
+    </section>
+
+
+
+    <section id="slide-53" class="slide">
+      <h3>Chrome Dev Tools Audit Extension</h3>
+      <img src="img/chrome.png" alt="" class="frame-img">
+    </section>
+
+
+
+    <section id="slide-54" class="slide">
+      <h2 class="mega loner">WordPress</h2>
+    </section>
+
+
+
+    <section id="slide-55" class="slide">
+      <div class="content-box">
+        <h3>No silver bullet</h3>
+        <ul>
+          <li>Case by case basis, do your best!</li>
+          <li>Theme issue: child theme, fork</li>
+          <li>Custom themes forked from Twenty $current_year;</li>
+          <li>Styles: Contrast / Color / Spacing - CSS!</li>
+          <li>Plugin: PHP filters, hooks, open source contribute, or fork</li>
+          <li>As always, amazing community; google it!</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section id="slide-56" class="slide">
+      <div class="w-code-editor position--relative">
+        <div class="code-editor shadow shadow-hover">
+          <span class="control"></span>
+          <span class="control"></span>
+          <span class="control"></span>
+          <pre>
+            <code contentEditable="true" class="language-css">
+      /*
+       Theme Name:   Twenty Fifteen Child
+       Theme URI:    http://example.com/twenty-fifteen-child/
+       Template:     twentyfifteen
+       Version:      1.0.0
+       License:      GNU General Public License v2 or later
+       License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+       Docs via: https://codex.wordpress.org/Child_Themes
+      */
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="slide-57" class="slide">
+      <div class="content-box">
+        <h2 class="gamma weight--light">Wee Workflow Tips</h2>
+        <ul>
+          <li>Work local (speed)</li>
+          <li>Start static (single stack)</li>
+          <li>Single page of all the patterns and modules</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section id="slide-58" class="slide">
+      <div class="content-box">
+        <h2 class="mega">Summary</h2>
+        <ol>
+          <li><strong>Who:</strong> Everyone & their robots</li>
+          <li><strong>What:</strong> be fully able to use your website</li>
+          <li><strong>When:</strong> Anytime.</li>
+          <li><strong>Where:</strong> Anywhere.</li>
+          <li><strong>Why:</strong> Because it's the right thing (+ perks)</li>
+          <li><strong>How:</strong> Cinchy (or pretty complicated)</li>
+        </ol>
+      </div>
+    </section>
+
+
+    <section id="slide-59" class="slide">
+      <div class="w-code-editor position--relative">
+        <div class="code-editor shadow shadow-hover">
+          <span class="control"></span>
+          <span class="control"></span>
+          <span class="control"></span>
+          <pre>
+            <code contentEditable="true" class="language-js">
+      if (good_on_time == true) {
+         return "Let's review a site now!";
+      } else {
+         return "Questions?!";
+      }
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="slide-60" class="slide">
+      <div class="content-box">
+        <ul>
+          <li>Brightness</li>
+          <li>Color blindness</li>
+          <li>Chrome Dev Tool Audit</li>
+          <li>Wave</li>
+          <li>VoiceOver (⌘+F5)
+            <ul>
+              <li>"VO" is ctrl + alt
+              <li><strong>VO + i</strong> to choose items
+              <li><strong>VO + u</strong> to choose links
+              <li><strong>VO + arrows</strong> to jump items
+            </ul>
+          </li>
+          <li>If Conference Internet decent:
+            <ul>
+              <li><a href="https://validator.w3.org/">W3C Validator</a></li>
+              <li><a href="http://a11yproject.com/checklist.html">A11y Checklist</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section id="slide-61" class="slide">
+      <h2 class="mega loner">Questions?</h2>
+    </section>
+
+
+
+    <section id="slide-62" class="slide">
+      <h2 class="mega">Notable AT</h2>
+      <h3 class="weight--light"><em>Assistive Technology</em></h3>
+    </section>
+
+
+
+    <section id="slide-63" class="slide">
+      <div class="content-box">
+        <ul>
+          <li>JAWS and NVDA on Windows desktops and laptops are the most widely used screen readers for people with blindness.
+          <li>VoiceOver on iOS is the most widely used mobile touch screen device screen reader for people with blindness.
+          <li>Dragon NaturallySpeaking is the most widely used voice navigation software for people with motor impairments.
+          <li>ZoomText is the most widely used screen magnification software for people with low vision.
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section id="slide-64" class="slide">
+      <div class="content-box">
+        <h2 class="mega">Resources</h2>
+        <ul>
+          <li><a href="http://a11yproject.com">A11y Project</a>
+          <li><a href="https://www.w3.org/WAI/WCAG20/quickref/">W3C Quick Ref</a>
+          <li><a href="http://www.aoda.ca/ ">AODA</a>
+          <li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">Chrome a11y audits plugin</a>
+          <li><a href="https://codex.wordpress.org/Child_Themes">WP Child Themes</a>
+          <li><a href="http://wet-boew.github.io/wet-boew/index-en.html">Front-end framework for Canada.ca</a>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section id="slide-65" class="slide">
+      <div class="content-box">
+        <h2 class="mega">Shout outs!</h2>
+        <ol>
+          <li>A11y Project (for making life easier)
+          <li>Ren Aysha's <a href="https://codepen.io/rrenula/pen/qmaFb">CSS Code Editor pen</a>
+          <li><a href="http://prismjs.com/">Prism JS</a> by Lea Verou
+          <li><a href="http://www.accessibilitycampto.org/">A11y Camp Toronto</a>
+          <li>Slide mood board by <a href="http://ronymikhael.com/">Rony Mikhael</a>
+          <li>"Person" icon by Ferran Brown from the Noun Project
+          <li>Carpages.ca</li>
+          <li>Harvest Bible Chapel Oakville</li>
+          <li>WordCamp Hamilton</li>
+        </ol>
+      </div>
+    </section>
+
+
+
+    <section id="slide-66" class="slide">
+      <h2 class="mega">Thank You!</h2>
+      <h3 class="weight--light">@ArleyM // arley@mcblain.ca</h3>
+      <h3 class="weight--light">Slides: arleym.com/a11y</h3>
+    </section>
+
+
+  </div>
+</body>
+<script src="js/prism.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/mousetrap.js"></script>
+<script src="js/presentation.js"></script>
+<script>
+$( document ).ready(function() {
+    twemoji.parse(document.body);
+});
+</script>
+</html>
